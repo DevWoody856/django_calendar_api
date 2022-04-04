@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  backend:
+    container_name: book_220329
+    build: .
+    volumes:
+      - .:/book_220329
+    ports:
+      - 8013:8013
+    depends_on:
+      - db_book_220329
+
+  db_book_220329:
+    container_name: db_book_220329
+    image: postgres
+    restart: always
+    volumes:
+      - .dbdata:/var/lib/db_book_220329
+    ports:
+      - 5453:5432
+
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
