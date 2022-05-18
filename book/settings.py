@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'mln5u#q*m@o%(roj*)&od4cb!)o#anh31!9801vx=98v#lwxjw'
 
 DEBUG = os.getenv('DEBUG_VALUE') == 'TRUE'
 
