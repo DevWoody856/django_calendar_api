@@ -40,7 +40,10 @@ calendarId=********************
 As a reminder, DB_HOST is the service name of the database in docker-compose.yaml.  
 In this docker configuration, it is `db_book_220329`.
 
-For the items related to google calender, service_account_email, credentials, and calendarId, please get your own in the GCP admin.
+For the items related to google Calendar, service_account_email, credentials, and calendarId, please get your own in the GCP admin.
+
+In particular, "credentials" must specify the path of the credentials file. So, first, get the credential file from GCP.
+(See the blog post on how to get)
 
 Also, this time the secret key is written directly in `settings.py`.
 
