@@ -12,7 +12,7 @@ And I use pycharm for my IDE.
 
 1. Enter following command from the command line.
 ```
-git clone https://github.com/DevWoody856/htmx_01
+git clone https://github.com/DevWoody856/django_calendar_api.git
 ```
 
 2. After downloading the repo, create an `.env` file in the root of the project.
